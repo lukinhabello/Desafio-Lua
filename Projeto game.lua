@@ -4,7 +4,7 @@
     Atributos 
         (Vida, Defesa, Ataque, Mana, Inteligência)
     Habilidades
-         
+         (Poderes, emoji)
 
 
 ]]
@@ -42,7 +42,7 @@ local function getProgressBar(attribute)
 
     local result = ""
     for i = 1, 10, 1 do
-        if i >= attribute then
+        if i <= attribute then
             result = result .. fullChar
         else
             result = result .. emptyChar
@@ -73,3 +73,32 @@ print("|", ability)
 print("|", emojiAbility)
 print("|")
 print("=========================================")
+
+--[[
+    Infos do monstro no mapa:
+        -Local de respawn
+        -Horário do respawn
+        -Tempo de cada respawn
+        -Quantidade de mobs ou monstros
+        -Valor de exeperiência por kill
+]]
+
+-----------Infos do monstro no mapa ---------------
+
+local respawn = "Tower"
+local hour = "alltime"
+local timeRespawn = 2 
+local amountMonstersRespawn = 6
+local experience = 8
+
+
+print("=========================================")
+print("|",  respawn)
+print("|",  hour)
+print("|",  timeRespawn)
+print("|",  amountMonstersRespawn)
+print("|",  experience)
+print("=========================================")
+
+
+
